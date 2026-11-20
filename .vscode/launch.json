@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug current C file",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/.build/${fileBasenameNoExtension}",
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "Build current C file"
+    },
+    {
+      "name": "Debug current C++ file",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/.build/${fileBasenameNoExtension}",
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "Build current C++ file"
+    }
+  ]
+}
